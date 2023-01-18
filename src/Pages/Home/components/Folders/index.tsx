@@ -1,8 +1,13 @@
 import { FolderSimple } from "phosphor-react";
 import { CountElement, FolderBox, FolderImage, FolderName } from "./styles";
+import { NavLink } from "react-router-dom";
+import { useState } from "react";
 
-export function MusicFolders() {
+export function Folders() {
+
+
 	return (
+	<NavLink to="/folderName">
 		<FolderBox>
 			<FolderImage>
 				<CountElement>
@@ -14,6 +19,7 @@ export function MusicFolders() {
 				Supercombo
 			</FolderName>
 		</FolderBox>
+	</NavLink>
 	)
 
 }

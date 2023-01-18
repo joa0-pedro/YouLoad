@@ -1,6 +1,7 @@
 import { Box, DownloadContent, FolderContent, HeadButtons, HeaderContent, Logo } from "./styles";
 import Icon from "../../assets/Icon.svg"
 import { DownloadSimple, FolderSimple } from "phosphor-react";
+import { NavLink } from "react-router-dom";
 
 
 export function Header(){
@@ -8,7 +9,9 @@ export function Header(){
 	<Box>
 		<HeaderContent>
 			<Logo>
+			<NavLink to="/" title="Inicio">
 			<img src={Icon}/>
+			</NavLink>
 			</Logo>
 			<HeadButtons>
 				<FolderContent>

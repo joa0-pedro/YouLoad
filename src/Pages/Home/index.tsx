@@ -1,4 +1,4 @@
-import { MusicFolders } from "./components/MusicFolders";
+import { Folders } from "./components/Folders";
 import { Content, HomeBox, TopItems } from "./styles";
 import { CreateFolder } from "./components/CreateFolder";
 
@@ -10,9 +10,8 @@ export function Home() {
 				<CreateFolder />
 			</TopItems>
 			<Content>
-					<MusicFolders/>
-					<MusicFolders/>
-					<MusicFolders/>
+
+
 			</Content>
 		</HomeBox>
 	)
