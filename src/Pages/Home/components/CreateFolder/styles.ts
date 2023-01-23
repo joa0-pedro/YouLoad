@@ -10,12 +10,11 @@ export const Modal = styled.div`
 `
 export const ModalContent = styled.div`
 	background: ${(props) => props.theme.background};
-  padding: 1.375rem 4.6875rem;
+  padding: 1.375rem;
 	border-radius: 8px;
 
   position:fixed;
   width: 704px;
-  height: 323px;
   top:50%;
   left:50%;
   transform: translate(-50%,-50%);
@@ -37,7 +36,7 @@ export const ModalInput = styled.input`
 	background: ${(props) => props.theme["gray-400"]};
 	color: ${(props) => props.theme.white};
 
-	width: 554px;
+	width: 661px;
 	height: 51px;
 
 	border: 0;
@@ -51,7 +50,8 @@ export const ModalButtons = styled.div`
 	display: flex;
 	justify-content: space-between;
 `
-export const CancelButton = styled.button`
+
+export const Button = styled.button`
 	display: flex;
 	align-items: center;
 
@@ -61,22 +61,26 @@ export const CancelButton = styled.button`
 
 	font-size: 1.25rem;
 
-	margin: 2.375rem 0 1.375rem 0;
+	margin: 1rem 0 0 0;
 
 	svg {
 		margin-right: 0.5rem;
 	}
+`
 
+export const CancelButton = styled(Button)`
 	:hover {
 		transition: 0.4s;
 		color: ${(props) => props.theme.red};
+		cursor: pointer;
 	}
 `
 
-export const SaveButton = styled(CancelButton)`
+export const SaveButton = styled(Button)`
 	:hover {
 		transition: 0.4s;
 		color: ${(props) => props.theme.green};
+		cursor: pointer;
 	}
 `
 

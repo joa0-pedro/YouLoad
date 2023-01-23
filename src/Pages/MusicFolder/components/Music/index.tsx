@@ -1,6 +1,6 @@
 import { MusicNote } from "phosphor-react";
-import { FolderName } from "../../../Home/components/Folders/styles";
 import { MusicBox, MusicImage } from "./styles";
+import { FolderName } from "../../../Home/styles";
 
 export function MusicFile(){
 	return (
