@@ -1,5 +1,5 @@
 import { ReactNode, createContext, useReducer } from 'react'
-import uuid from 'react-uuid';
+import {v4 as uuid } from 'uuid';
 import { addNewFolderAction } from '../reducers/actions';
 import { Folder, FoldersReducer } from '../reducers/reducer';
 
@@ -26,12 +26,13 @@ export function FoldersContextProvider({
 	})
 	const { folders } = folderState
 
-
 	function createNewFolder(data: CreateFolderData){
+
 		const newFolder: Folder = {
-			id: uuid(),
+			id : uuid(),
 			name: data.name,
 		}
+		console.log(newFolder);
 		dispatch(addNewFolderAction(newFolder))
 	}
 

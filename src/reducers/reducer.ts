@@ -17,6 +17,11 @@ export function FoldersReducer(state: FoldersState, action: any) {
 				...state,
 				folders: [...state.folders, action.payload.newFolder],
 			}
+		case ActionTypes.DELETE_FOLDER:
+			return {
+				...state,
+				folders: [...state.folders, state.folders],
+			}
 		default:
 			return state
 	}

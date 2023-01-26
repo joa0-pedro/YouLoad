@@ -2,6 +2,7 @@ import { Folder } from "./reducer";
 
 export enum ActionTypes {
   ADD_NEW_FOLDER = 'ADD_NEW_FOLDER',
+  DELETE_FOLDER = 'DELETE_FOLDER',
 }
 
 export function addNewFolderAction(newFolder: Folder) {
@@ -13,4 +14,9 @@ export function addNewFolderAction(newFolder: Folder) {
   }
 }
 
+export function deleteFolderAction(folder: Folder) {
+	return {
+		type: ActionTypes.DELETE_FOLDER,
+	}
+}
 

@@ -29,3 +29,7 @@ export const Content = styled.div`
 	height: 49.578125rem;
 	background: ${(props) => props.theme["gray-400"]};
 `
+export const TopButtons = styled.div`
+	display: flex;
+	gap: 1rem;
+`
